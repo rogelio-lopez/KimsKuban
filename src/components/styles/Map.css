@@ -1,0 +1,15 @@
+.infoWindow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary-dark);
+}
+.infoWindow > p{
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+.infoWindow > small{
+    font-weight: 600;
+    color: var(--secondary-grey);
+}

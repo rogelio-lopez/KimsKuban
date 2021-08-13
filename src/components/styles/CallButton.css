@@ -1,0 +1,37 @@
+.callbutton{
+  z-index: 100;
+  opacity: .85;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 14px;
+  border: 6px solid #ff8a4b;
+  border-radius: 99%;
+  background: var(--primary-orange);
+  transition: .25s;
+}
+.callbutton i{
+  font-size: 2rem;
+  color: var(--primary-white);
+}
+.callbutton:hover{
+  opacity: 1;
+}
+
+@media screen and (max-width: 668px){
+  .callbutton{
+    opacity: 1;
+    bottom: 15px;
+    right: 15px;
+    padding: 12px;
+    border: 5px solid #ff8a4b;
+  }
+  .callbutton i{
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 425px){
+  .callbutton i{
+    font-size: 1.6rem;
+  }
+}

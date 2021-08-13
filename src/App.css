@@ -1,0 +1,296 @@
+.app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    background: var(--background-color);
+}
+
+
+/* ========== Home Section ========== */
+#home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: var(--max-width);
+    padding: 100px 0 30px 0;
+    background: url('./images/home_bg.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Home Text */
+.home__text{ max-width: 50%; }
+.home__text h1{
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 5rem;
+    color: var(--secondary-dark);
+}
+.home__text span{ color: var(--primary-orange); }
+.home__onlineOrder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 190px;
+    margin-top: 20px;
+    border-radius: 20px;
+    color: var(--primary-white);
+    background: var(--primary-red);
+}
+.home__onlineOrder i{
+    padding: 5px 10px;
+    border-right: solid 2px rgb(182, 0, 0) !important; 
+}
+.home__onlineOrder a{
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary-white);
+}
+/* Home Logo */
+.home__logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 99%;
+    background: linear-gradient(to top right, white, #faf8f9);
+}
+.home__kimsLogo{
+    height: 300px;
+    width: 300px;
+    background: url('./images/kimsLogo_500px.png');
+    background-size: cover;
+}
+
+/* Home Items List */
+.home__items{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: fit-content;
+    width: 90%;
+    margin-top: 20px;
+}
+
+/* When Burger appeaars */
+@media screen and (max-width: 668px) {
+    .home__text{
+        max-width: 90%;
+    }
+    .home__items{
+        width: 50%;
+        flex-direction: column;
+    }
+    .home__kimsLogo{
+        height: 40vw;
+        width: 40vw;
+    }
+}
+/* Large mobile site */
+@media screen and (max-width: 425px) {
+    .home__text h1{
+        font-size: 18.8vw;
+    }
+    .home__logo{
+        margin-top: 40px;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    .home__kimsLogo{
+        min-height: 170px;
+        min-width: 170px;
+    }
+    .home__items{
+        min-width: 212px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+
+/* ========== Favorites ========== */
+#favorites{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    padding: 30px 0 10px 0;
+    background-color: var(--primary-white);
+}
+
+#favorites h2{
+    z-index: 10;
+    margin: 10px 0;
+    font-size: 1.9rem;
+    font-weight: 600;
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+    border-bottom: 3px solid var(--primary-red);
+    color: var(--secondary-dark);
+}
+.favorites__container{
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: var(--max-width);
+    height: fit-content;
+}
+.favorites__itemGroup1,
+.favorites__itemGroup2{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: space-around;
+}
+
+
+/* ========== Map ========== */
+#map{
+    width: 100%;
+}
+
+/* ========== Contact ========== */
+#contact{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: var(--max-width);
+    padding: 40px 0 30px;
+}
+.contact__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 210px;
+    width: 320px;
+    margin: 10px;
+    transition: ease .25s;
+}
+.contact__container:hover{
+    box-shadow: 0px 5px 25px -10px var(--secondary-grey);
+}
+#contact__hours{
+    box-shadow: 0px 5px 25px -10px var(--secondary-grey);
+}
+#contact__direction i{
+    color: var(--primary-red);
+}
+.contact__container h4{
+    margin-top: 40px;
+    font-weight: 600;
+    color: var(--secondary-dark);
+}
+#directionText{
+    margin: 0;
+}
+.contact__number{
+    display: flex;
+    align-items: center;
+    color: var(--primary-red);
+}
+.contact__number h4{
+    margin: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.contact__number a{
+    color: var(--primary-red);
+}
+.contact__container p{
+    margin: 5px 20px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--secondary-grey);
+}
+.contact__email{
+    color: var(--secondary-dark);
+}
+.contact__time{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding-top: 2px;
+    padding-bottom: 5px;
+    border-bottom: 2px dotted rgb(165, 164, 164);
+}
+.contact__time p{
+    margin: 5px;
+    font-weight: 600;
+    color: var(--secondary-grey);
+}
+
+/* Back to top button */
+.backToTop{
+    position: relative;
+    margin-bottom: 10px;
+}
+.backToTop a i{
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--primary-red);
+    transition: ease .1s;
+}
+.backToTop:hover i{
+    transform: scale(1.1);
+}
+
+/* ========== Contact ========== */
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    height: 120px;
+    width: 100%;
+    color: var(--primary-white);
+    background-color: var(--primary-red);
+}
+.footer__credits p{
+    margin: 10px 0;
+    color: var(--primary-white);
+}
+.footer__credits a{
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-decoration: underline;
+    color: var(--primary-white);
+}
+.footer__socials{
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+}
+.footer__socials a i{
+    font-size: 2rem !important;
+    color: var(--primary-white);
+}
+
+@media screen and (max-width: 768px) {
+    footer{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footer__credits{
+        margin-bottom: 10px;
+    }
+    .footer__socials a i{
+        font-size: 1.5rem !important;
+    }
+}

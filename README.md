@@ -3,7 +3,7 @@ Website for Key West restaurant - Kim's Kuban
 
 [KimsKuban.com](https://kimskuban.com)
 
-<img alt="Current Site" src="./rogeliolopez-old.png" align="left" width="450px"/>
+<img alt="Current Site" src="./kims \ kuban.png" width="450px"/>
 
 
 

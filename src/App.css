@@ -96,10 +96,11 @@
         width: 40vw;
     }
 }
-/* Large mobile site */
+/* Mobile: L */
 @media screen and (max-width: 425px) {
     .home__text h1{
-        font-size: 18.8vw;
+        font-size: 16vw;
+        font-weight: bold;
     }
     .home__logo{
         margin-top: 40px;
@@ -116,6 +117,14 @@
         margin-right: 5px;
     }
 }
+/* Mobile: M */
+@media screen and (max-width: 375px) {
+    .home__onlineOrder{
+        height: 45px;
+        width: 180px;
+    }
+}
+
 
 
 /* ========== Favorites ========== */
@@ -154,6 +163,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 50%;
+    min-width: 220px;
     justify-content: space-around;
 }
 

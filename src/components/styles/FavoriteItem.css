@@ -17,6 +17,7 @@
 .favoriteItem__text > h4{
     font-family: 'Libre Baskerville', serif;
     font-style: italic;
+    font-size: 1.4rem;
     font-weight: 600;
     margin: 20px 0 0 0;
     color: var(--secondary-dark);

@@ -75,29 +75,29 @@ function App() {
             <FavoriteItem 
               name="Cuban Coffee" 
               description="Espresso with milk and sugar" 
-              price="2.50"
+              price="2.75"
               image=""
               link="https://orders.cake.net/11197294#8737230b-d9eb-4280-a80b-e3b052d2bf16"/>
             <FavoriteItem 
-              name="Cheese Bread" 
-              description="Hot and pressed classic cuban sandwich" 
+              name="Cuban Mix" 
+              description="Classic pressed cuban sandwich" 
               price="8.75" 
               image=""
               link="https://orders.cake.net/11197294#32744bf4-d210-4f9e-c071-69c662f9c4db"/>
           </div>
           <div className="favorites__itemGroup2">
             <FavoriteItem 
-              name="Cuban Mix" 
-              description="Tacos from mexico made with steak and corn tortillas" 
+              name="Steak Tacos" 
+              description="Four steak tacos made with corn or flour tortillas" 
               price="10.95" 
               image=""
-              link=""/>
+              link="https://orders.cake.net/11197294#76c7a6b8-a999-4c80-f676-98154e02acde"/>
             <FavoriteItem 
-              name="Steak & Cheese" 
-              description="Steak and cheese sandwich on cuban bread" 
+              name="Picadillo Special" 
+              description="Picadillo, yellow rice, and half of a bread & butter" 
               price="8.75" 
               image=""
-              link="https://orders.cake.net/11197294#32744bf4-d210-4f9e-c071-69c662f9c4db"/>
+              link="https://orders.cake.net/11197294"/>
           </div>
         </div>
       </section>

@@ -19,7 +19,7 @@
   border-radius: 99%;
   background-color: #ff9961;
   transform-origin: center;
-  animation: border1-animation forwards 2.8s infinite;
+  animation: border1-animation forwards 2.2s infinite;
 }
 .callbutton__border2{
   position: absolute;
@@ -28,7 +28,7 @@
   border-radius: 99%;
   border: 1px solid var(--primary-orange);
   transform-origin: center;
-  animation: border2-animation forwards 2.8s infinite;
+  animation: border2-animation forwards 2.2s infinite;
 }
 .callbutton a{
   z-index: 60;
@@ -55,11 +55,10 @@
 }
 
 @media screen and (max-width: 668px){
-  .callbutton a{
+  .callbutton{
     opacity: 1;
-    bottom: 15px;
-    right: 15px;
-    padding: 12px;
+    bottom: 5px;
+    right: 5px;
   }
   .callbutton i{
     font-size: 2rem;
@@ -96,7 +95,7 @@
     transform: scale(1.4);
 
   }
-  55%{
+  53%{
     transform: scale(1.4);
 
   }
@@ -114,7 +113,7 @@
     transform: scale(1.5);
     opacity: 1;
   }
-  56%{
+  52%{
     transform: scale(1.5);
     opacity: 1;
   }

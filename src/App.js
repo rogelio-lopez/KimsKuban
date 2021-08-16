@@ -52,15 +52,15 @@ function App() {
         <div className="home__items">
             <HomeItem 
               title="Local Spot" 
-              text="Where the locals like to go"
+              text="Where the locals love to eat"
               icon={<i className="fas fa-map-marker-alt"></i>}/>
             <HomeItem 
               title="Pick Up" 
-              text="Will be ready when you get there"
+              text="Always ready when you get there"
               icon={<i className="fas fa-shopping-bag"></i>}/>
             <HomeItem 
               title="Fast Delivery" 
-              text="Delivered right at you doorstep"
+              text="Delivered right at your doorstep"
               icon={<i className="fas fa-motorcycle"></i>}/>
         </div>
 

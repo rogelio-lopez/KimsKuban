@@ -1,6 +1,13 @@
-# Getting Started with Application
+# Kim's Kuban Website
+Website for Key West restaurant - Kim's Kuban
+[KimsKuban.com](https://kimskuban.com)
 
-## `npm i`
+<img alt="Current Site" src="./rogeliolopez-old.png" align="left" width="450px"/>
+
+
+## Getting Started with Application
+
+### `npm i`
 Install all project dependecies.
 
 ### `npm start`

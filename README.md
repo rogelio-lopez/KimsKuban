@@ -7,7 +7,8 @@ Website for Key West restaurant - Kim's Kuban
 
 
 
-## Getting Started with Application
+### Getting Started with Application
+------------------------------------
 
 ### `npm i`
 Install all project dependecies.

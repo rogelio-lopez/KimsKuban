@@ -6,7 +6,7 @@ function FavoriteItem({name, description, price, link, image}) {
     return (
         <div className="favoriteItem">
 
-            <img src={image} alt=""/>
+            <img src={image} alt={name}/>
 
             <div className="favoriteItem__text">
                 <h4>{name}</h4>

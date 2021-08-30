@@ -157,6 +157,7 @@
     width: 100%;
     max-width: var(--max-width);
     height: fit-content;
+    margin-top: 60px;
 }
 .favorites__itemGroup1,
 .favorites__itemGroup2{

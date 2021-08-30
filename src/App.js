@@ -8,6 +8,11 @@ import Map from './components/Map';
 import DropdownNav from './components/DropdownNav';
 import CallButton from './components/CallButton';
 
+import MixImg from './images/mix.png';
+import CoffeeImg from './images/coffee.png';
+import TacosImg from './images/tacos.png';
+import PicadilloImg from './images/picadillo.png';
+
 
 function App() {
   
@@ -74,30 +79,30 @@ function App() {
           <div className="favorites__itemGroup1">
             <FavoriteItem 
               name="Cuban Coffee" 
-              description="Espresso with milk and sugar" 
-              price="2.75"
-              image=""
-              link="https://orders.cake.net/11197294#8737230b-d9eb-4280-a80b-e3b052d2bf16"/>
+              description="Espresso with milk and sugar (Large)" 
+              price="2.95"
+              link="https://orders.cake.net/11197294#8737230b-d9eb-4280-a80b-e3b052d2bf16"
+              image={CoffeeImg}/>
             <FavoriteItem 
               name="Cuban Mix" 
               description="Classic pressed cuban sandwich" 
-              price="8.75" 
-              image=""
-              link="https://orders.cake.net/11197294#32744bf4-d210-4f9e-c071-69c662f9c4db"/>
+              price="8.95" 
+              link="https://orders.cake.net/11197294#32744bf4-d210-4f9e-c071-69c662f9c4db"
+              image={MixImg}/>
           </div>
           <div className="favorites__itemGroup2">
             <FavoriteItem 
               name="Steak Tacos" 
               description="Four steak tacos made with corn or flour tortillas" 
-              price="10.95" 
-              image=""
-              link="https://orders.cake.net/11197294#76c7a6b8-a999-4c80-f676-98154e02acde"/>
+              price="12.95" 
+              link="https://orders.cake.net/11197294#76c7a6b8-a999-4c80-f676-98154e02acde"
+              image={TacosImg}/>
             <FavoriteItem 
               name="Picadillo Special" 
               description="Picadillo, yellow rice, and half of a bread & butter" 
-              price="8.75" 
-              image=""
-              link="https://orders.cake.net/11197294"/>
+              price="12.95" 
+              link="https://orders.cake.net/11197294"
+              image={PicadilloImg}/>
           </div>
         </div>
       </section>

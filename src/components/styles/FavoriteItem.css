@@ -1,13 +1,26 @@
 .favoriteItem{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 300px;
     width: 210px;
-    margin: 40px 10px;
+    margin: 55px 10px;
     text-align: center;
     border-radius: 10px;
     transition: ease .3s;
     cursor: default;
     border: 1px solid rgb(241, 235, 235);
     background-color: #fff;
+}
+.favoriteItem img{
+    position: absolute;
+    width: 140px;
+    bottom: 240px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: .2s;
 }
 .favoriteItem__text{
     display: flex;
@@ -59,6 +72,10 @@
 .favoriteItem:hover{
     background: var(--primary-red);
     transform: translateY(-15px);
+}
+.favoriteItem:hover img{
+    transform: scale(1.15) translateY(-20px);
+
 }
 
 .favoriteItem:hover > .favoriteItem__text > h4{

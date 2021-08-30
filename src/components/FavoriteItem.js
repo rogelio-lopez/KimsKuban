@@ -1,9 +1,12 @@
 import React from 'react';
 import './styles/FavoriteItem.css';
+import Mix from '../images/mix.png';
 
-function FavoriteItem({name, description, price, link}) {
+function FavoriteItem({name, description, price, link, image}) {
     return (
         <div className="favoriteItem">
+
+            <img src={image} alt=""/>
 
             <div className="favoriteItem__text">
                 <h4>{name}</h4>

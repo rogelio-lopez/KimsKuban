@@ -1,6 +1,7 @@
 import React from 'react';
 import Burger from '../components/Burger';
 import './Nav.css';
+import MenuPDF from '../images/KimsKuban_Menu_2022.pdf';
 
 function Nav({toggleSidebar, setToggleSidebar}) {
 
@@ -12,9 +13,9 @@ function Nav({toggleSidebar, setToggleSidebar}) {
                 <ul className="nav__links">
                     <li>
                         <a 
-                        href="https://orders.cake.net/11197294"
+                        href={MenuPDF}
                         target="_blank" 
-                        rel="noreferrer">Menu</a>
+                        rel="noopener noreferrer">Menu</a>
                     </li>
                     <li>
                         <a href="#favorites">favorites</a>

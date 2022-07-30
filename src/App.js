@@ -7,6 +7,7 @@ import FavoriteItem from './components/FavoriteItem';
 import Map from './components/Map';
 import DropdownNav from './components/DropdownNav';
 import CallButton from './components/CallButton';
+import Banner from './components/Banner';
 
 import MixImg from './images/mix.png';
 import CoffeeImg from './images/coffee.png';
@@ -20,6 +21,9 @@ function App() {
 
   return (
     <div className="app">
+
+      {/* Banner */}
+      <Banner />
 
       {/* Navigation Bar / Header */}
       <Nav toggleSidebar={toggleSidebar} setToggleSidebar={setToggleSidebar}/>

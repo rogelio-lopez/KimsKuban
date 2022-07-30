@@ -1,6 +1,6 @@
 .dropdownNav{
   position: fixed;
-  top: 71px;
+  top: 111px;
   right: 1px;
   width: fit-content;
   z-index: -10;
@@ -10,7 +10,7 @@
 .dropdownNav-active{
   display: none;
   position: fixed;
-  top: 71px;
+  top: 111px;
   right: 1px;
   width: fit-content;
   z-index: 100;

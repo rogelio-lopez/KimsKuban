@@ -1,0 +1,134 @@
+/* Header */
+.header{
+  padding: 2rem 3% 1.5rem;
+}
+.header .main nav ul li:not(:last-of-type){
+  margin-right: 2.25rem;
+}
+.header .main nav ul li a{
+  text-decoration: none; /* make general */
+  color: var(--dk-clr);
+  position: relative;
+}
+.header nav li a::before{ 
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: var(--primary-clr);
+  transition: width .25s ease;
+}
+.header nav li:hover a::before{ 
+  width: 100%;
+}
+
+/* Hamburger Menu */
+.hamburger{
+    display: none;
+    height: 26px;
+    width: 26px;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+.hamburger span{
+    position: absolute;
+    top: calc(50% + 6px);
+    height: 3px;
+    width: 25px;
+}
+.hamburger span::before,
+.hamburger span::after{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 25px;
+}
+.hamburger span,
+.hamburger span::before,
+.hamburger span::after{ 
+    transition: .35s;
+    border-radius: 5px;
+    background: var(--primary-clr); 
+}
+.hamburger span::before{
+    top: -.6rem;
+}
+.hamburger span::after{
+    top: .6rem;
+}
+/* hamburger Animation */
+.hamburger.clicked span{
+    background: rgba(0, 0, 0, 0);
+}
+.hamburger.clicked span::before{
+    top: 0;
+    transform: rotate(45deg);
+}
+.hamburger.clicked span::after{
+    top: 0;
+    transform: rotate(135deg);  
+}
+
+
+/* Footer */ 
+footer{
+  color: #FFF;
+  background: var(--dk-clr);
+}
+footer .footer{
+  padding: 1rem 3%;
+}
+footer p a{
+  color: #FFF;
+} 
+footer ul li:not(:last-of-type){
+  margin-right: 1rem;
+}
+footer ul li a i{
+  color: #FFF;
+  font-size: 1.75rem;
+  transition: .25s ease; /* add to general */
+}
+footer p a:hover,
+footer p a:focus,
+footer ul li:hover a i, /* add to general */
+footer ul li:focus a i{ /* add to general */
+  color: var(--primary-clr);
+}
+
+/* Responsive */
+@media screen and (max-width: 800px){
+    .header {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    .header nav + a{
+        display: none;
+    }
+    .header .main nav{
+        display: none;
+        position: absolute;
+        bottom: -131%;
+        right: 2px;
+        padding: 1rem;
+        border-bottom-left-radius: 10px;
+        background: var(--dk-clr);
+        transition: .3s ease;
+    }
+    .header .main nav.active{
+        display: flex;
+    }
+    .header .main nav ul{
+        flex-direction: column;
+    }
+    .hamburger{
+        display: flex;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 500px){
+
+}

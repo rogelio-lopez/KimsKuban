@@ -1,0 +1,564 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+
+    <!-- Primary SEO -->
+    <title>
+      Kim’s Kuban Austin | Cuban Sandwiches & Cuban Coffee (South Congress)
+    </title>
+    <meta
+      name="description"
+      content="Kim’s Kuban (Austin) is a Cuban food truck serving Cuban sandwiches and Cuban coffee. Parked at The Lawn on South Congress: 2118 S Congress Ave, Austin, TX. Order online or call (512) 698-3616."
+    />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#861218" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://kimskuban.com/atx" />
+
+    <!-- Favicons (replace paths with your real files) -->
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Kim’s Kuban" />
+
+    <!-- Open Graph (Facebook / iMessage / etc.) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Kim’s Kuban" />
+    <meta
+      property="og:title"
+      content="Kim’s Kuban Austin | Cuban Sandwiches & Cuban Coffee"
+    />
+    <meta
+      property="og:description"
+      content="Cuban sandwiches + Cuban coffee. Parked at The Lawn on South Congress: 2118 S Congress Ave, Austin, TX. Order online or call (512) 698-3616."
+    />
+    <meta property="og:url" content="https://kimskuban.com/atx" />
+    <!-- Use a real 1200x630 image for best sharing -->
+    <meta
+      property="og:image"
+      content="https://kimskuban.com/assets/og-img.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Kim’s Kuban Cuban food truck in Austin, Texas"
+    />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Kim’s Kuban Austin | Cuban Sandwiches & Cuban Coffee"
+    />
+    <meta
+      name="twitter:description"
+      content="Parked at The Lawn on South Congress: 2118 S Congress Ave, Austin, TX. Order online or call (512) 698-3616."
+    />
+    <meta
+      name="twitter:image"
+      content="https://kimskuban.com/assets/og-img.jpg"
+    />
+
+    <!-- Performance: preconnect to external origins used on the page -->
+    <link rel="preconnect" href="https://www.google.com" />
+    <link rel="preconnect" href="https://www.gstatic.com" />
+    <link rel="preconnect" href="https://order.toasttab.com" />
+    <link rel="preconnect" href="https://www.instagram.com" />
+
+    <!-- LocalBusiness / Restaurant Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": ["Restaurant", "FoodEstablishment"],
+        "name": "Kim’s Kuban",
+        "url": "https://kimskuban.com/atx",
+        "telephone": "+15126983616",
+        "servesCuisine": ["Cuban"],
+        "priceRange": "$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "2118 S Congress Ave",
+          "addressLocality": "Austin",
+          "addressRegion": "TX",
+          "postalCode": "78704",
+          "addressCountry": "US"
+        },
+        "areaServed": { "@type": "City", "name": "Austin" },
+        "menu": "https://order.toasttab.com/online/kimskuban-atx",
+        "sameAs": ["https://www.instagram.com/kimskubanatx/"],
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Wednesday",
+            "opens": "08:00",
+            "closes": "14:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Thursday",
+            "opens": "08:00",
+            "closes": "14:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Friday",
+            "opens": "08:00",
+            "closes": "14:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "09:00",
+            "closes": "15:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Sunday",
+            "opens": "09:00",
+            "closes": "15:00"
+          }
+        ]
+      }
+    </script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- Top announcement bar -->
+    <div class="topbar" role="region" aria-label="Announcement">
+      <div class="container topbar__inner">
+        <span class="topbar__badge">Now Serving</span>
+        <p class="topbar__text">
+          Parked at <strong>The Lawn</strong> — 2118 S Congress Ave, Austin TX
+        </p>
+        <a class="topbar__link" href="#location">Hours & Location</a>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="top">
+      <div class="container header__inner">
+        <a class="brand" href="#top" aria-label="Kim's Kuban Home">
+          <span class="brand__text">
+            <img src="./assets/logo.png" width="175px" />
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <button
+            class="nav__toggle"
+            id="navToggle"
+            type="button"
+            aria-label="Open menu"
+            aria-controls="navMenu"
+            aria-expanded="false"
+          >
+            <span class="nav__toggleLines" aria-hidden="true"></span>
+          </button>
+
+          <div class="nav__menu" id="navMenu">
+            <a class="nav__link is-active" href="#top" data-nav>Home</a>
+            <a class="nav__link" href="#menu" data-nav>Menu</a>
+            <a class="nav__link" href="#location" data-nav>Location</a>
+            <a class="nav__link" href="#reviews" data-nav>Reviews</a>
+            <a class="nav__link" href="#social" data-nav>Social</a>
+
+            <div class="nav__cta">
+              <a
+                class="btn btn--solid"
+                href="https://order.toasttab.com/online/kimskuban-atx"
+                target="_blank"
+                rel="noopener"
+              >
+                Order on Toast
+              </a>
+              <a class="btn btn--ghost" href="tel:+15126983616">Call</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="container hero__grid">
+          <div class="hero__copy">
+            <div class="pillRow">
+              <span class="pill">Cuban Sandwiches</span>
+              <span class="pill">Cuban Coffee</span>
+              <span class="pill pill--dark">Austin, TX</span>
+            </div>
+
+            <h1 class="hero__title">
+              Bringing The Best Cuban Taste to
+              <span class="hero__titleAccent">Austin, Texas!</span>
+            </h1>
+
+            <p class="hero__subtitle">
+              Kim's Kuban is parked at <strong>The Lawn</strong> on S Congress.
+              Pull up for a fast, crave-worthy Cuban bite and coffee that hits.
+            </p>
+
+            <div class="hero__actions">
+              <a
+                class="btn btn--solid btn--lg"
+                href="https://order.toasttab.com/online/kimskuban-atx"
+                target="_blank"
+                rel="noopener"
+              >
+                Order Online
+              </a>
+              <a class="btn btn--outline btn--lg" href="#menu">View Menu</a>
+            </div>
+
+            <div class="hero__meta">
+              <div class="metaCard">
+                <div class="metaCard__label">Hours</div>
+                <div class="metaCard__value">Wed–Fri 8am–2pm</div>
+                <div class="metaCard__sub">Closed Mondays & Tuesdays</div>
+              </div>
+              <div class="metaCard">
+                <div class="metaCard__label">Weekend</div>
+                <div class="metaCard__value">Sat–Sun 9am–3pm</div>
+                <div class="metaCard__sub">Come early</div>
+              </div>
+              <div class="metaCard">
+                <div class="metaCard__label">Location</div>
+                <div class="metaCard__value">The Lawn</div>
+                <div class="metaCard__sub">2118 S Congress</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__visual" aria-hidden="true">
+            <div class="heroPoster"></div>
+
+            <div class="heroBadges">
+              <a
+                class="badgeCard"
+                href="https://www.instagram.com/kimskubanatx/"
+                target="_blank"
+                rel="noopener"
+              >
+                <span class="badgeCard__kicker">Follow</span>
+                <span class="badgeCard__big">@kimskubanatx</span>
+                <span class="badgeCard__sub">Fresh updates & specials</span>
+              </a>
+
+              <div class="badgeCard badgeCard--dark badgeCard--delivery">
+                <span class="badgeCard__kicker">Get it delivered</span>
+                <div class="deliveryLinks">
+                  <a
+                    href="https://www.doordash.com/store/kim's-kuban-atx-austin-39658939/"
+                    target="_blank"
+                    rel="noopener"
+                    class="deliveryBtn"
+                  >
+                    DoorDash
+                  </a>
+
+                  <a
+                    href="https://www.ubereats.com/store/kims-kuban-atx/X2jf679_QJ6Sdlbi1Zc3wQ/"
+                    target="_blank"
+                    rel="noopener"
+                    class="deliveryBtn"
+                  >
+                    Uber
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- HIGHLIGHTS -->
+      <section class="section" id="menu">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Menu built to crave.</h2>
+            <p class="section__sub">
+              Our full menu + ordering is on Toast. Tap below and you’re set.
+            </p>
+          </div>
+
+          <div class="grid3">
+            <div class="card">
+              <div class="card__icon" aria-hidden="true">🥪</div>
+              <h3 class="card__title">Cuban Sandwiches</h3>
+              <p class="card__text">
+                Pressed, melty, and loaded with flavor. The kind of bite that
+                makes you plan your next one.
+              </p>
+              <div class="card__cta">
+                <a
+                  class="btn btn--solid"
+                  href="https://order.toasttab.com/online/kimskuban-atx"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Order Sandwiches
+                </a>
+              </div>
+            </div>
+
+            <div class="card card--red">
+              <div class="card__icon" aria-hidden="true">☕</div>
+              <h3 class="card__title">Cuban Coffee</h3>
+              <p class="card__text">
+                Strong, smooth, and ready to power your day. Grab one with your
+                sandwich and you’re golden.
+              </p>
+              <div class="card__cta">
+                <a
+                  class="btn btn--light"
+                  href="https://order.toasttab.com/online/kimskuban-atx"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Order Coffee
+                </a>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card__icon" aria-hidden="true">⚡</div>
+              <h3 class="card__title">Fast Pickup</h3>
+              <p class="card__text">
+                Order online, swing by The Lawn, and pick up quick. Perfect
+                before work or a SoCo stroll.
+              </p>
+              <div class="card__cta">
+                <a class="btn btn--outline" href="#location">Get Directions</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="menuCta">
+            <div class="menuCta__copy">
+              <h3 class="menuCta__title">Ready to order?</h3>
+              <p class="menuCta__text">
+                Tap the button and Toast will show the full menu + checkout.
+              </p>
+            </div>
+            <div class="menuCta__actions">
+              <a
+                class="btn btn--solid btn--lg"
+                href="https://order.toasttab.com/online/kimskuban-atx"
+                target="_blank"
+                rel="noopener"
+              >
+                Open Toast Menu
+              </a>
+              <a class="btn btn--ghost btn--lg" href="tel:+15126983616">
+                Call: (512) 698-3616
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- LOCATION -->
+      <section class="section section--alt" id="location">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Hours & location</h2>
+            <p class="section__sub">
+              Parked at <strong>The Lawn</strong> — 2118 S Congress Ave, Austin,
+              TX
+            </p>
+          </div>
+
+          <div class="locationGrid">
+            <div class="panel">
+              <h3 class="panel__title">Hours</h3>
+
+              <div class="hours">
+                <div class="hours__row hours__row--closed">
+                  <div class="hours__day">Mon</div>
+                  <div class="hours__time">Closed</div>
+                </div>
+                <div class="hours__row hours__row--closed">
+                  <div class="hours__day">Tue</div>
+                  <div class="hours__time">Closed</div>
+                </div>
+                <div class="hours__row">
+                  <div class="hours__day">Wed</div>
+                  <div class="hours__time">8:00am – 2:00pm</div>
+                </div>
+                <div class="hours__row">
+                  <div class="hours__day">Thu</div>
+                  <div class="hours__time">8:00am – 2:00pm</div>
+                </div>
+                <div class="hours__row">
+                  <div class="hours__day">Fri</div>
+                  <div class="hours__time">8:00am – 2:00pm</div>
+                </div>
+                <div class="hours__row">
+                  <div class="hours__day">Sat</div>
+                  <div class="hours__time">9:00am – 3:00pm</div>
+                </div>
+                <div class="hours__row">
+                  <div class="hours__day">Sun</div>
+                  <div class="hours__time">9:00am – 3:00pm</div>
+                </div>
+              </div>
+
+              <div class="panel__actions">
+                <a
+                  class="btn btn--solid"
+                  href="https://www.google.com/maps/search/?api=1&query=The%20Lawn%202118%20S%20Congress%20Ave%20Austin%20TX"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Open in Maps
+                </a>
+                <a class="btn btn--outline" href="tel:+15126983616">Call</a>
+              </div>
+
+              <div class="panel__note">
+                <strong>Note:</strong> Closed Tuesdays.
+              </div>
+            </div>
+
+            <div class="mapWrap" aria-label="Map to The Lawn on South Congress">
+              <iframe
+                title="Map - The Lawn 2118 S Congress Ave Austin TX"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps?q=2118%20S%20Congress%20Ave%20Austin%20TX&output=embed"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- REVIEWS -->
+      <section class="section" id="reviews">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Local love.</h2>
+            <p class="section__sub">
+              Don’t take our word for it — check out reviews and drop one after
+              you visit.
+            </p>
+          </div>
+
+          <div class="grid3">
+            <blockquote class="quote">
+              <p>
+                “Cuban sandwich was a <strong>hit</strong>. Pressed perfectly.
+                Coffee was strong and smooth.”
+              </p>
+              <footer>— Austin regular</footer>
+            </blockquote>
+
+            <blockquote class="quote quote--red">
+              <p>
+                “Best quick breakfast stop on SoCo. Fast pickup, big flavor.”
+              </p>
+              <footer>— Neighborhood favorite</footer>
+            </blockquote>
+
+            <blockquote class="quote">
+              <p>
+                “Exactly what I wanted — authentic taste and the kind of bite
+                you think about later.”
+              </p>
+              <footer>— First-time visitor</footer>
+            </blockquote>
+          </div>
+
+          <div class="centerActions">
+            <a
+              class="btn btn--solid btn--lg"
+              href="https://www.google.com/search?q=kims+kuban+atx#lrd=0x8644b56edb9e5f95:0x7b923712ac4c7eee,3,,,,"
+              target="_blank"
+              rel="noopener"
+            >
+              View / Leave a Google Review
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- SOCIAL -->
+      <section class="section section--cta" id="social">
+        <div class="container">
+          <div class="ctaBlock">
+            <div class="ctaBlock__copy">
+              <h2 class="ctaBlock__title">Catch the latest drops.</h2>
+              <p class="ctaBlock__text">
+                Specials, schedule updates, and the good stuff — follow us on
+                Instagram.
+              </p>
+            </div>
+
+            <div class="ctaBlock__actions">
+              <a
+                class="btn btn--light btn--lg"
+                href="https://www.instagram.com/kimskubanatx/"
+                target="_blank"
+                rel="noopener"
+              >
+                Follow on Instagram
+              </a>
+              <a class="btn btn--ghostLight btn--lg" href="#menu">Order Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__left">
+          <div class="footer__brand">Kim's Kuban</div>
+          <div class="footer__muted">
+            Parked at The Lawn — 2118 S Congress Ave, Austin TX
+          </div>
+          <div class="footer__muted">
+            <a href="tel:+15126983616">(512) 698-3616</a>
+          </div>
+        </div>
+
+        <div class="footer__right">
+          <a
+            class="footer__link"
+            href="https://order.toasttab.com/online/kimskuban-atx"
+            target="_blank"
+            rel="noopener"
+            >Toast Menu</a
+          >
+          <a
+            class="footer__link"
+            href="https://www.instagram.com/kimskubanatx/"
+            target="_blank"
+            rel="noopener"
+            >Instagram</a
+          >
+          <a class="footer__link" href="#top">Back to top</a>
+        </div>
+      </div>
+
+      <div class="container footer__bottom">
+        <span>© <span id="year"></span> Kim's Kuban</span>
+        <span class="footer__dot">•</span>
+        <span class="footer__muted">Made in Austin</span>
+      </div>
+    </footer>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>

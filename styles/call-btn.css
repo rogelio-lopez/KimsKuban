@@ -1,0 +1,128 @@
+.call_btn{
+  z-index: 50;
+  opacity: .85;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  height: 110px;
+  width: 110px;
+  border-radius: 99%;
+  animation: call-button-animation forwards 3s infinite;
+}
+.call_btn-brdr1{
+  position: absolute;
+  height: 50%;
+  width: 50%;
+  border-radius: 99%;
+  background-color: #ff9961;
+  transform-origin: center;
+  animation: border1-animation forwards 2.2s infinite;
+}
+.call_btn-brdr2{
+  position: absolute;
+  height: 50%;
+  width: 50%;
+  border-radius: 99%;
+  border: 1px solid var(--secondary-clr);
+  transform-origin: center;
+  animation: border2-animation forwards 2.2s infinite;
+}
+.call_btn a{
+  z-index: 60;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 55%;
+  width: 55%;
+  text-decoration: none;
+}
+.call_btn i{
+  font-size: 2rem;
+  color: var(--lt-clr);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 99%;
+  background: var(--secondary-clr);
+  transition: .25s;
+}
+.call_btn:hover{
+  opacity: 1;
+}
+
+@media screen and (max-width: 668px){
+  .call_btn{
+    opacity: 1;
+    bottom: 5px;
+    right: 5px;
+  }
+  .call_btn i{
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 425px){
+  .call_btn i{
+    font-size: 1.6rem;
+  }
+}
+
+@keyframes call-button-animation{
+  0%{
+    transform: rotate(0deg);
+  }
+  25%{
+    transform: rotate(-15deg);
+  }
+  50%{
+    transform: rotate(0deg);
+  }
+  75%{
+    transform: rotate(-15deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
+@keyframes border1-animation{
+  0%{
+    transform: scale(1);
+  }
+  48%{
+    transform: scale(1.4);
+
+  }
+  53%{
+    transform: scale(1.4);
+
+  }
+  100%{
+    transform: scale(1);
+
+  }
+}
+@keyframes border2-animation{
+  0%{
+    transform: scale(1);
+    opacity: 1;
+  }
+  47%{
+    transform: scale(1.5);
+    opacity: 1;
+  }
+  52%{
+    transform: scale(1.5);
+    opacity: 1;
+  }
+  90%{
+    opacity: 0;
+  }
+  100%{
+    transform: scale(2);
+    opacity: 0;
+  }
+}
